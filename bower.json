@@ -1,0 +1,22 @@
+{
+  "name": "polymer-flot",
+  "version": "0.0.1",
+  "authors": [
+    "Riyad Preukschas <riyad@informatik.uni-bremen.de>"
+  ],
+  "description": "Polymer Flot Element",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "tmp"
+  ],
+  "dependencies": {
+    "jquery": "jquery#>= 2.1.4",
+    "flot": "flot/flot#^0.8.3",
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
