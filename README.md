@@ -11,18 +11,19 @@ The `flot-chart` element has `data` and `options` attributes that it forwards to
 
 Somewhere in your HTML:
 ```html
-<flot-chart id="chart" />
+<flot-chart id="some_chart"></flot-chart>
 ```
 
 Then set the data from JavaScript:
+
 ```javascript
-var some_data = [];
+var some_series = [];
 for (var i = 0; i < 14; i += 0.5) {
-  some_data.push([i, Math.sin(i)]);
+  some_series.push([i, Math.sin(i)]);
 }
 
 // use ANY of the following calls to update the chart
-$("#chart").prop('data', [some_data]);
-$("#chart")[0].data = [some_data];
-document.getElementById("chart").data = some_data;
+$("#some_chart").prop('data', [some_series]);
+$("#some_chart")[0].data = [some_series];
+document.getElementById("some_chart").data = [some_series];
 ```
