@@ -3,12 +3,11 @@ Polymer Flot Element
 
 This is a (simplified) polimerization of the [Flot](http://www.flotcharts.org/) plotting libarary for jQuery.
 
-== Properties
+## Elements
 
-`data`: accepts the [native Flot data format](https://github.com/flot/flot/blob/master/API.md#data-format).
-`options`: can be used to specify [plot options](https://github.com/flot/flot/blob/master/API.md#plot-options).
+The `flot-chart` element has `data` and `options` attributes that it forwards to Flot's `$.plot()` function. You can refer to Flot's documentation for the [data format](https://github.com/flot/flot/blob/master/API.md#data-format) and [plot options](https://github.com/flot/flot/blob/master/API.md#plot-options).
 
-== Usage
+## Usage
 
 Somewhere in your HTML:
 ```html
@@ -16,7 +15,7 @@ Somewhere in your HTML:
 ```
 
 Then set the data from JavaScript:
-```js
+```javascript
 var some_data = [];
 for (var i = 0; i < 14; i += 0.5) {
   some_data.push([i, Math.sin(i)]);
