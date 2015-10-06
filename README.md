@@ -10,11 +10,12 @@ The `flot-chart` element has `data` and `options` attributes that it forwards to
 ## Usage
 
 Somewhere in your HTML:
+
 ```html
-<flot-chart id="some_chart"></flot-chart>
+<flot-chart id="some_chart" data="[ [[0, 3], [4, 8], [8, 5], [9, 13]] ]"></flot-chart>
 ```
 
-Then set the data from JavaScript:
+Or set the data via JavaScript:
 
 ```javascript
 var some_series = [];
@@ -22,10 +23,7 @@ for (var i = 0; i < 14; i += 0.5) {
   some_series.push([i, Math.sin(i)]);
 }
 
-// use ANY of the following calls to update the chart
 $("#some_chart").prop('data', [some_series]);
-$("#some_chart")[0].data = [some_series];
-document.getElementById("some_chart").data = [some_series];
 ```
 
 ## Caveats
