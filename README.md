@@ -1,7 +1,7 @@
 Polymer Flot Element
 ====================
 
-This is a (simplified) polimerization of the [Flot](http://www.flotcharts.org/) plotting libarary for jQuery.
+This is a (simplified) [polimerization](https://www.polymer-project.org/) of the [Flot](http://www.flotcharts.org/) plotting libarary for jQuery.
 
 ## Elements
 
