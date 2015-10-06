@@ -9,7 +9,8 @@
   "keywords": [
     "web-components",
     "polymer",
-    "ajax"
+    "jquery",
+    "flot"
   ],
   "main": "flot-chart.html",
   "repository": {
