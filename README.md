@@ -32,6 +32,14 @@ for (var i = 0; i < 14; i += 0.5) {
 $("#some_chart").prop('data', [some_series]);
 ```
 
+## Plugins
+
+You can use any of Flot's standard plugins by additionally importing any  of the `flot-*-plugin.html` files.
+
+```html
+<link rel="import" href="bower_components/polymer-flot/flot-pie-plugin.html">
+```
+
 ## Caveats
 
 Polymer won't recognize changes (e.g. to data series) if you change the data inplace and the data array (object) stays the same.
