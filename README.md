@@ -9,13 +9,19 @@ The `flot-chart` element has `data` and `options` attributes that it forwards to
 
 ## Usage
 
-Somewhere in your HTML:
+Import ...
+
+```html
+<link rel="import" href="bower_components/polymer-flot/flot-chart.html">
+```
+
+... use ...
 
 ```html
 <flot-chart id="some_chart" data="[ [[0, 3], [4, 8], [8, 5], [9, 13]] ]"></flot-chart>
 ```
 
-Or set the data via JavaScript:
+... and update via JavaScript.
 
 ```javascript
 var some_series = [];
