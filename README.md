@@ -1,44 +1,35 @@
 Polymer Flot Element
 ====================
 
-This is a (simplified) [polimerization](https://www.polymer-project.org/) of the [Flot](http://www.flotcharts.org/) plotting libarary for jQuery.
+This is a [Polymer](https://www.polymer-project.org/) wrapper for the [Flot](http://www.flotcharts.org/) plotting libarary.
+
+## Usage
+
+```html
+<!-- Import element -->
+<link rel="import" href="bower_components/polymer-flot/flot-chart.html">
+
+<!-- Use element -->
+<flot-chart id="some_chart" data="[ [[0, 3], [4, 8], [8, 5], [9, 13]] ]"></flot-chart>
+
+<!-- Update chart data dynamically -->
+<script>
+  var some_series = [];
+  for (var i = 0; i < 14; i += 0.5) {
+    some_series.push([i, Math.sin(i)]);
+  }
+
+  $("#some_chart").prop('data', [some_series]);
+</script>
+```
 
 ## Elements
 
 The `flot-chart` element has `data` and `options` attributes that it forwards to Flot's `$.plot()` function. You can refer to Flot's documentation for the [data format](https://github.com/flot/flot/blob/master/API.md#data-format) and [plot options](https://github.com/flot/flot/blob/master/API.md#plot-options).
 
-## Usage
-
-Import ...
-
-```html
-<link rel="import" href="bower_components/polymer-flot/flot-chart.html">
-```
-
-... use ...
-
-```html
-<flot-chart id="some_chart" data="[ [[0, 3], [4, 8], [8, 5], [9, 13]] ]"></flot-chart>
-```
-
-... and update via JavaScript.
-
-```javascript
-var some_series = [];
-for (var i = 0; i < 14; i += 0.5) {
-  some_series.push([i, Math.sin(i)]);
-}
-
-$("#some_chart").prop('data', [some_series]);
-```
-
-## Plugins
+### Plugins
 
 You can use any of Flot's standard plugins by additionally importing any  of the `flot-*-plugin.html` files.
-
-```html
-<link rel="import" href="bower_components/polymer-flot/flot-pie-plugin.html">
-```
 
 ## Caveats
 
