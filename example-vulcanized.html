@@ -2,7 +2,9 @@
     <title>Polymer Flot Example: Basic Usage</title>
     <link href="stylesheets/flot-examples.css" rel="stylesheet" type="text/css">
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <script>(function () {
+    
+  </head>
+  <body><div hidden="" by-vulcanize=""><script>(function () {
 function resolve() {
 document.body.removeAttribute('unresolved');
 }
@@ -6341,25 +6343,7 @@ this.fire('dom-change');
 });</script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/flot/jquery.flot.js"></script>
-<script type="text/javascript">
-      $(function() {
-
-        var d1 = [];
-        for (var i = 0; i < 14; i += 0.5) {
-          d1.push([i, Math.sin(i)]);
-        }
-
-        var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
-
-        // A null signifies separate line segments
-
-        var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
-
-        $("#placeholder").prop("data", [ d1, d2, d3 ]);
-      });
-      </script>
-  </head>
-  <body><div hidden="" by-vulcanize=""><dom-module id="flot-chart" assetpath="bower_components/polymer-flot/">
+<dom-module id="flot-chart" assetpath="bower_components/polymer-flot/">
   <style>
     :host,
     #chart {
@@ -6412,7 +6396,23 @@ this.fire('dom-change');
     },
   });
 </script>
-</div>
+<script type="text/javascript">
+      $(function() {
+
+        var d1 = [];
+        for (var i = 0; i < 14; i += 0.5) {
+          d1.push([i, Math.sin(i)]);
+        }
+
+        var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+
+        // A null signifies separate line segments
+
+        var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
+
+        $("#placeholder").prop("data", [ d1, d2, d3 ]);
+      });
+      </script></div>
     <div id="header">
       <h2>Basic Usage</h2>
     </div>
